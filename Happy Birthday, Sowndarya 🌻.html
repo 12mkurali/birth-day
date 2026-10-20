@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Sowndarya 🌻</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Playfair+Display:wght@500;700&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#fff6d6;--bg2:#ffe9a8;--ink:#5a3a14;--gold:#e8a500;--sun:#ffc800;--cream:#fffaf0;--blush:#ffd6dd;--card:#fffdf5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a1c08;--bg2:#4a3209;--ink:#fff1c9;--card:#3a2a10;--cream:#46330f}}
+:root[data-theme="dark"]{--bg1:#2a1c08;--bg2:#4a3209;--ink:#fff1c9;--card:#3a2a10;--cream:#46330f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--ink);font-family:'Playfair Display',Georgia,serif;overflow-x:hidden}
+.script{font-family:'Dancing Script','Segoe Script',cursive}
+.stage{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:72px 18px 48px;text-align:center;animation:fade .9s both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+h1{font-size:clamp(2rem,8vw,3.6rem);margin:.3em 0;line-height:1.15}
+h2{font-size:clamp(1.5rem,6vw,2.4rem);margin:.2em 0 .6em}
+p.sub{font-size:1.15rem;max-width:30em;margin:.4em auto 1.4em}
+.btn{background:linear-gradient(135deg,#ffd83a,#f2a900);color:#4a2a05;border:0;border-radius:999px;padding:14px 28px;font:700 1.05rem 'Playfair Display',serif;cursor:pointer;box-shadow:0 6px 22px #f2a90066;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px) scale(1.03)}.btn.ghost{background:var(--card);box-shadow:0 2px 10px #0002}
+.tools{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:10px;display:flex;gap:8px;z-index:20}
+.tools button{width:44px;height:44px;border-radius:50%;border:0;background:var(--card);font-size:1.2rem;cursor:pointer;box-shadow:0 2px 10px #0003}
+.fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.petal{position:absolute;top:-30px;width:14px;height:22px;border-radius:50% 50% 50% 50%/70% 70% 30% 30%;background:linear-gradient(#ffe27a,#f5b800);opacity:.85;animation:fall linear infinite}
+.petal.h{background:var(--blush);border-radius:50% 50% 0 50%;transform:rotate(45deg)}
+@keyframes fall{to{transform:translate(60px,110vh) rotate(540deg)}}
+.stage>*{position:relative;z-index:2}
+.gift{font-size:7rem;cursor:pointer;filter:drop-shadow(0 0 28px #ffc800);animation:bob 2.4s ease-in-out infinite;background:none;border:0}
+@keyframes bob{50%{transform:translateY(-14px) scale(1.04)}}
+.gift.open{animation:pop 1.6s forwards}
+@keyframes pop{30%{transform:scale(1.4) rotate(-8deg)}to{transform:scale(3);opacity:0}}
+.spark{position:fixed;left:50%;top:48%;width:10px;height:10px;border-radius:50%;background:#ffd23a;box-shadow:0 0 12px #ffb300;animation:burst 1.6s ease-out forwards;z-index:30}
+@keyframes burst{to{transform:translate(var(--x),var(--y)) scale(.2);opacity:0}}
+.line{opacity:0;animation:fade 1.2s forwards}
+.sway{animation:sway 4s ease-in-out infinite;transform-origin:bottom}
+@keyframes sway{50%{transform:rotate(4deg)}}
+.spin{animation:spin 40s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.feature{max-width:min(92vw,560px);background:#fff;padding:12px 12px 8px;border-radius:6px;box-shadow:0 10px 34px #0003;transform:rotate(-1.5deg)}
+.feature img{width:100%;max-height:70vh;object-fit:contain;display:block;background:#f7efd8;transition:transform 1.2s}
+.feature:hover img{transform:scale(1.04)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px;width:100%;max-width:900px;margin:26px 0}
+.pol{background:#fff;padding:8px 8px 4px;border-radius:4px;box-shadow:0 6px 20px #0003;transition:transform .3s;cursor:pointer}
+.pol:nth-child(odd){transform:rotate(-2deg)}.pol:nth-child(even){transform:rotate(2deg)}.pol:hover{transform:scale(1.06) rotate(0);z-index:3}
+.pol img{width:100%;height:150px;object-fit:contain;background:#f7efd8;display:block}
+.cap{width:100%;border:0;border-bottom:1px dashed #c9a24a;background:transparent;text-align:center;font:600 1.15rem 'Dancing Script',cursive;color:#5a3a14;padding:4px 0;outline:none}
+.tl{width:100%;max-width:640px;border-left:3px solid var(--gold);margin:20px 0 20px 14px;padding-left:20px;text-align:left}
+.tl div{margin:0 0 20px;position:relative}.tl div:before{content:'💛';position:absolute;left:-34px;top:2px}
+.tl img{height:64px;width:64px;object-fit:contain;background:#f7efd8;border-radius:6px;vertical-align:middle;margin-right:10px}
+.env{position:relative;width:min(88vw,340px);height:220px;cursor:pointer;margin:20px auto 0}
+.env .back{position:absolute;inset:0;background:#f2c14e;border-radius:8px;box-shadow:0 10px 30px #0004}
+.env .flap{position:absolute;left:0;right:0;top:0;height:120px;background:#e5ac2c;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .8s;z-index:4}
+.env.open .flap{transform:rotateX(180deg);z-index:0}
+.env .front{position:absolute;inset:0;background:linear-gradient(135deg,#f7d268 50%,#efbf45 50%);clip-path:polygon(0 100%,0 35%,50% 70%,100% 35%,100% 100%);z-index:3;border-radius:0 0 8px 8px}
+.env .seal{position:absolute;left:50%;top:92px;transform:translateX(-50%);z-index:5;font-size:2rem;transition:opacity .4s}.env.open .seal{opacity:0}
+.paper{position:relative;max-width:520px;margin:-10px auto 0;padding:26px 24px;border-radius:6px;background:repeating-linear-gradient(#fffaf0 0 31px,#f1e2bc 32px),#fffaf0;color:#4a3112;font:500 1.45rem/32px 'Dancing Script',cursive;text-align:left;box-shadow:0 10px 30px #0003;animation:fade 1.2s both}
+.paper p{margin:0 0 32px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;width:100%;max-width:560px}
+.flip{perspective:900px;height:210px;cursor:pointer;border:0;background:none;padding:0}
+.flip i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:12px;border-radius:18px;backface-visibility:hidden;transition:transform .8s;font-style:normal;box-shadow:0 8px 24px #0003}
+.flip .f{background:linear-gradient(145deg,#ffe066,#f5b400);color:#4a2a05;font-weight:700}
+.flip .b{background:var(--card);transform:rotateY(180deg);font:600 1.05rem/1.4 'Dancing Script',cursive;font-size:1.2rem}
+.flip{position:relative}.flip.on .f{transform:rotateY(-180deg)}.flip.on .b{transform:none}
+.garden{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;align-items:flex-end;z-index:1;pointer-events:none;height:30vh}
+.glow{position:fixed;width:8px;height:8px;border-radius:50%;background:#ffe27a;box-shadow:0 0 14px 4px #ffc800;animation:tw 2.5s ease-in-out infinite;z-index:1}
+@keyframes tw{50%{opacity:.2;transform:scale(.6)}}
+.heart{font-size:4.2rem;filter:drop-shadow(0 0 20px #ff6b8a);animation:beat 1.2s infinite}@keyframes beat{40%{transform:scale(1.25)}}
+.strip{display:flex;gap:10px;overflow-x:auto;max-width:100%;padding:8px}.strip img{height:110px;width:auto;max-width:160px;object-fit:contain;background:#fff;padding:4px;border-radius:4px;box-shadow:0 4px 14px #0003}
+.modal{position:fixed;inset:0;background:#000a;z-index:50;display:flex;align-items:center;justify-content:center;padding:16px}
+.panel{background:var(--card);border-radius:16px;padding:20px;max-width:440px;width:100%;max-height:90vh;overflow:auto;text-align:left}
+.panel input[type=text]{width:100%;padding:8px;border-radius:8px;border:1px solid #c9a24a;margin:6px 0 10px}
+.panel .btn{margin:4px 4px 4px 0;padding:10px 18px;font-size:.95rem}
+.hint{font-size:.9rem;opacity:.8}
+.ta{font-family:'Noto Sans Tamil','Nirmala UI','Latha',sans-serif;font-weight:600}.sub.ta{font-size:1.1rem;line-height:1.9;color:var(--ink);text-shadow:0 0 14px #ffc80066}.paper.ta{font-size:1.1rem;line-height:32px;font-weight:500}.qta{margin:.2em auto 1.2em;max-width:28em;padding:14px 18px;border-radius:16px;background:#ffffff55;backdrop-filter:blur(4px);box-shadow:0 0 24px #ffc80055}.lb{position:fixed;inset:0;background:#000d;z-index:60;display:flex;align-items:center;justify-content:center}.lb img{max-width:96vw;max-height:92vh;object-fit:contain}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script>
+const {useState,useEffect,useRef,useMemo}=React;
+const html=htm.bind(React.createElement);
+
+/* ===== EASY CUSTOMISATION ===== */
+const CONFIG={
+  name:'Sowndarya',
+  driveLink:'https://drive.google.com/drive/folders/14U8UM_k08ggFTb32zuVeEoywSrcw2ork',
+  captions:['My favourite memory','Your beautiful smile','Moments I treasure'],
+  letterTa:[
+    'நீ என் மகிழ்ச்சி, என் அமைதி, என் மிகவும் பிடித்தவள். நீ என் வாழ்க்கையில் வந்ததிலிருந்து, எல்லாமே இன்னும் அழகாகிவிட்டது.',
+    'மஞ்சள் நிறம் என் உலகிற்கு ஒளி தருவது போல, நீ என் இதயத்திற்கு மகிழ்ச்சி தருகிறாய்.',
+    'நான் எப்போதும் சரியானவன் இல்லை என்பதும், சில நேரங்களில் தெரியாமல் உன்னை காயப்படுத்திவிடுகிறேன் என்பதும் எனக்குத் தெரியும். ஆனால் என் காதல் உண்மையானது; நீ எப்போதும் மகிழ்ச்சியாக இருக்க வேண்டும் என்பதே என் ஆசை.',
+    'வாழ்க்கை எனக்கு ஆயிரம் வாய்ப்புகள் தந்தாலும், ஒவ்வொரு முறையும் உன்னையே தேர்ந்தெடுப்பேன்.',
+    'பிறந்தநாள் வாழ்த்துகள், என் அன்பே. நீ எப்போதும் என் மிகவும் பிடித்தவளாகவே இருப்பாய். 🌻💛'],
+  letter:[
+    'You are my happiness, my peace, and my favourite person. Ever since you came into my life, everything has become more beautiful.',
+    'Like yellow brings sunshine to my world, you bring happiness to my heart.',
+    'I know I may not always be perfect, and sometimes I may hurt you without meaning to. But my love for you is genuine, and I always want to see you happy.',
+    'If life gave me a thousand chances, I would still choose you every single time.',
+    'Happy Birthday, my love. You will always be my favourite person. 🌻💛'],
+  cards:[
+    ['Why You Are Special to Me','You turn ordinary days into my favourite ones. Your smile, your kindness and the way you care make you the most special person I know.'],
+    ['My Favourite Memory With You','Every moment beside you is my favourite, but the ones where we simply laughed together without a care are the ones I replay the most.'],
+    ['A Promise for Our Future','I promise to keep choosing you, to listen better, to hold your hand through everything, and to keep making you smile.'],
+    ['One Last Surprise','Close your eyes, make a wish… I’ll spend my life helping it come true. I love you, Sowndarya. 💛']]
+};
+
+/* ===== IndexedDB storage (stays on this device) ===== */
+const db=()=>new Promise((ok,no)=>{try{const r=indexedDB.open('bday-sowndarya',1);r.onupgradeneeded=()=>r.result.createObjectStore('kv');r.onsuccess=()=>ok(r.result);r.onerror=()=>no(r.error)}catch(e){no(e)}});
+const kvGet=async k=>{try{const d=await db();return await new Promise(ok=>{const q=d.transaction('kv').objectStore('kv').get(k);q.onsuccess=()=>ok(q.result);q.onerror=()=>ok(undefined)})}catch(e){return undefined}};
+const kvSet=async(k,v)=>{try{const d=await db();d.transaction('kv','readwrite').objectStore('kv').put(v,k)}catch(e){}};
+const shrink=f=>new Promise(ok=>{const img=new Image(),u=URL.createObjectURL(f);img.onload=()=>{const s=Math.min(1,1400/Math.max(img.width,img.height)),c=document.createElement('canvas');c.width=img.width*s;c.height=img.height*s;c.getContext('2d').drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(u);ok(c.toDataURL('image/jpeg',.85))};img.onerror=()=>ok(null);img.src=u});
+
+/* ===== Visual pieces ===== */
+const Sun=({s=120,style,cls=''})=>html`<svg class=${cls} viewBox="-50 -50 100 100" width=${s} height=${s} style=${style}>${[...Array(16)].map((_,i)=>html`<ellipse key=${i} rx="7" ry="20" cy="-30" fill=${i%2?'#f7c325':'#ffd84d'} transform=${'rotate('+i*22.5+')'}/>`)}<circle r="18" fill="#6b3f1d"/><circle r="11" fill="#4a2a12"/></svg>`;
+const Petals=({n=24})=>{const p=useMemo(()=>[...Array(n)].map((_,i)=>({l:Math.random()*100,d:Math.random()*10,t:8+Math.random()*8,h:i%5===0})),[n]);
+  return html`<div class="fx">${p.map((x,i)=>html`<span key=${i} class=${'petal'+(x.h?' h':'')} style=${{left:x.l+'%',animationDuration:x.t+'s',animationDelay:'-'+x.d+'s'}}></span>`)}</div>`};
+const Next=({onClick,children})=>html`<button class="btn" onClick=${onClick}>${children}</button>`;
+
+const QUOTES=[
+  {tl:'Nee siripu azhagu, nee siritha azhagu',ta:'நீ சிரிப்பு அழகு, நீ சிரித்தால் அழகு',en:'Your smile is beauty, and when you smile, you are beauty itself.'},
+  {tl:'Poi sonnaalum sirikira… Kovam vanthaalum sirikira nee azhaga!',ta:'பொய் சொன்னாலும் சிரிக்கிற… கோபம் வந்தாலும் சிரிக்கிற நீ அழகா!',en:'Even when I tell a lie, you smile… even when you are angry, you smile. How beautiful you are!'},
+  {tl:'Ninaithu ninaithu siripathil nee perazhagu',ta:'நினைத்து நினைத்து சிரிப்பதில் நீ பேரழகு',en:'In the way you smile, lost in your thoughts, you are the most beautiful.'},
+  {tl:'Nee siritha mattum thaan azhagu',ta:'நீ சிரித்த மட்டும்தான் அழகு',en:'Your smile alone is the most beautiful thing.'}
+];
+function Quotes(){
+  const [i,setI]=useState(0),[tr,setTr]=useState(false);
+  useEffect(()=>{const t=setInterval(()=>{setI(x=>(x+1)%QUOTES.length);setTr(false)},10000);return()=>clearInterval(t)},[]);
+  const q=QUOTES[i];
+  return html`<div class="qta" style=${{marginTop:24,width:'min(92vw,460px)'}} key=${i}>
+    <p class="ta" style=${{fontSize:'1.25rem',margin:'0 0 6px',lineHeight:1.7}}>${q.ta}</p>
+    <p class="script" style=${{fontSize:'1.3rem',margin:'0 0 8px'}}>${q.tl}</p>
+    ${tr&&html`<p class="line" style=${{margin:'0 0 8px',fontStyle:'italic'}}>${q.en}</p>`}
+    <button class="btn ghost" style=${{padding:'7px 16px',fontSize:'.9rem'}} onClick=${()=>setTr(!tr)}>${tr?'Hide':'Translate 🌐'}</button>
+    <p class="hint" style=${{margin:'10px 0 4px'}}>— Murali</p>
+    <div>${QUOTES.map((_,k)=>html`<button key=${k} aria-label=${'quote '+(k+1)} onClick=${()=>{setI(k);setTr(false)}} style=${{width:10,height:10,borderRadius:'50%',border:0,margin:'0 4px',padding:0,cursor:'pointer',background:k===i?'#e8a500':'#e8a50055'}}></button>`)}</div>
+  </div>`}
+
+function Welcome({go}){
+  const [open,setOpen]=useState(false);
+  const sparks=useMemo(()=>[...Array(28)].map(()=>{const a=Math.random()*6.28,r=120+Math.random()*180;return{x:Math.cos(a)*r+'px',y:Math.sin(a)*r+'px'}}),[]);
+  const run=()=>{setOpen(true);setTimeout(()=>go('reveal'),1800)};
+  return html`<div class="stage">
+    <${Sun} s=${90} cls="spin"/>
+    <h1 class="script">Hey, My Sunshine 🌻</h1>
+    <p class="sub">I made something special just for you…</p>
+    <button class=${'gift'+(open?' open':'')} onClick=${run} aria-label="gift">🎁</button><br/>
+    <${Next} onClick=${run}>Open Your Surprise 💛<//>
+    <${Quotes}/>
+    ${open&&sparks.map((s,i)=>html`<span key=${i} class="spark" style=${{'--x':s.x,'--y':s.y}}></span>`)}
+    ${open&&[...Array(8)].map((_,i)=>html`<span key=${'h'+i} class="spark" style=${{'--x':(i-4)*50+'px','--y':'-300px',background:'none',boxShadow:'none',fontSize:'1.6rem',width:'auto'}}>💛</span>`)}
+  </div>`}
+
+function Reveal({go}){
+  return html`<div class="stage">
+    <${Sun} s=${150} cls="sway"/>
+    <h1 class="script line" style=${{animationDelay:'.3s'}}>Happy Birthday, ${CONFIG.name}! ❤️</h1>
+    <p class="sub line" style=${{animationDelay:'1.6s'}}>You make my world brighter, just like my favourite colour yellow.</p>
+    <div class="line qta" style=${{animationDelay:'2.3s'}}><p class="ta" style=${{margin:'0 0 6px',fontSize:'1.3rem'}}>பிறந்தநாள் வாழ்த்துகள், சௌந்தர்யா! ❤️</p><p class="ta" style=${{margin:0,lineHeight:1.8}}>என் உலகை என் பிடித்த மஞ்சள் நிறம் போல ஒளிரச் செய்பவள் நீ. 🌻</p></div>
+    <div class="line" style=${{animationDelay:'2.8s'}}><${Next} onClick=${()=>go('gallery')}>See Our Memories 📸<//></div>
+  </div>`}
+
+function Gallery({go,photos,setPhotos,openManage}){
+  const [feat,setFeat]=useState(0),[lb,setLb]=useState(null);
+  const edit=(id,c)=>setPhotos(photos.map(p=>p.id===id?{...p,cap:c}:p));
+  const f=photos[Math.min(feat,photos.length-1)];
+  return html`<div class="stage" style=${{justifyContent:'flex-start'}}>
+    <h2 class="script">Our Photo Memories 📷</h2>
+    ${!photos.length?html`<p class="sub">Add your photos to fill this gallery with your real memories.</p><${Next} onClick=${openManage}>Upload Photos 💛<//>`:html`
+      <div class="feature"><img src=${f.src} alt="" key=${f.id} onClick=${()=>setLb(f.src)}/><input class="cap" value=${f.cap} onInput=${e=>edit(f.id,e.target.value)} aria-label="caption"/></div>
+      <p class="hint">Tap a photo to enlarge · edit any caption underneath</p>
+      <div class="grid">${photos.map((p,i)=>html`<div class="pol" key=${p.id}><img src=${p.src} alt="" onClick=${()=>setFeat(i)}/><input class="cap" value=${p.cap} onInput=${e=>edit(p.id,e.target.value)}/></div>`)}</div>
+      <h2 class="script">Our Memory Timeline</h2>
+      <div class="tl">${photos.map((p,i)=>html`<div key=${p.id}><img src=${p.src} alt=""/><b class="script" style=${{fontSize:'1.4rem'}}>${p.cap}</b><span class="hint"> · Memory ${i+1}</span></div>`)}</div>`}
+    <${Next} onClick=${()=>go('letter')}>Read My Letter 💌<//>
+    ${lb&&html`<div class="lb" onClick=${()=>setLb(null)}><img src=${lb} alt=""/></div>`}
+  </div>`}
+
+function Letter({go}){
+  const [open,setOpen]=useState(false),[ta,setTa]=useState(false);
+  return html`<div class="stage" style=${{justifyContent:'flex-start'}}>
+    <h2 class="script">A Letter For You 💌</h2>
+    <div class=${'env'+(open?' open':'')} onClick=${()=>setOpen(!open)}><div class="back"></div><div class="flap"></div><div class="front"></div><span class="seal">💛</span></div>
+    ${!open&&html`<p class="hint">Tap the envelope to open</p>`}
+    ${open&&html`<div style=${{margin:'12px 0'}}><button class=${'btn '+(ta?'ghost':'')} style=${{padding:'8px 18px'}} onClick=${()=>setTa(false)}>English</button> <button class=${'btn '+(ta?'':'ghost')} style=${{padding:'8px 18px'}} onClick=${()=>setTa(true)}>தமிழ்</button></div><div class=${'paper'+(ta?' ta':'')} key=${ta}>${(ta?CONFIG.letterTa:CONFIG.letter).map((t,i)=>html`<p key=${i}>${t}</p>`)}</div><br/><${Next} onClick=${()=>go('cards')}>More Surprises 🌻<//>`}
+  </div>`}
+
+function Cards({go}){
+  const [on,setOn]=useState([]);
+  const tog=i=>setOn(on.includes(i)?on.filter(x=>x!==i):[...on,i]);
+  return html`<div class="stage">
+    <h2 class="script">Tap each sunflower 🌻</h2>
+    <div class="cards">${CONFIG.cards.map(([t,m],i)=>html`<button key=${i} class=${'flip'+(on.includes(i)?' on':'')} onClick=${()=>tog(i)}>
+      <i class="f"><${Sun} s=${64}/><span style=${{marginTop:8}}>${t}</span></i><i class="b">${m}</i></button>`)}</div>
+    <br/><${Next} onClick=${()=>go('final')}>Final Surprise 💛<//>
+  </div>`}
+
+function Final({go,photos}){
+  const lights=useMemo(()=>[...Array(18)].map(()=>({l:Math.random()*100,t:Math.random()*70,d:Math.random()*2.5})),[]);
+  return html`<div class="stage" style=${{paddingBottom:'30vh'}}>
+    ${lights.map((x,i)=>html`<span key=${i} class="glow" style=${{left:x.l+'%',top:x.t+'%',animationDelay:x.d+'s'}}></span>`)}
+    <h1 class="script">Happy Birthday, My Sunshine! 💛</h1>
+    <p class="sub">Like the colour yellow, you bring warmth, light, and happiness into my world. No matter how many times life gives me a choice, I’ll always choose you. 🌻</p>
+    <div class="qta"><p class="sub ta" style=${{margin:0}}>மஞ்சள் நிறம் போல, நீ என் வாழ்க்கையில் அரவணைப்பையும் ஒளியையும் மகிழ்ச்சியையும் தருகிறாய். வாழ்க்கை எத்தனை முறை வாய்ப்பு தந்தாலும், ஒவ்வொரு முறையும் உன்னையே தேர்ந்தெடுப்பேன். 🌻</p></div>
+    ${photos.length>0&&html`<div class="strip">${photos.map(p=>html`<img key=${p.id} src=${p.src} alt=""/>`)}</div>`}
+    <div class="heart">💖</div>
+    <h2 class="script" style=${{marginBottom:4}}>Forever My Favourite Person. ❤️</h2>
+    <p class="ta" style=${{fontSize:'1.2rem',margin:'0 0 18px'}}>என்றென்றும் என் மிகவும் பிடித்தவள் ❤️</p>
+    <${Next} onClick=${()=>go('welcome')}>Replay 🔁<//>
+    <div class="garden">${[90,130,100,150,110,140,95].map((s,i)=>html`<${Sun} key=${i} s=${s} cls="sway" style=${{animationDelay:i*.4+'s'}}/>`)}</div>
+  </div>`}
+
+function Manage({photos,setPhotos,song,setSong,drive,setDrive,close}){
+  const add=async e=>{const out=[];for(const f of e.target.files){const src=await shrink(f);if(src)out.push({id:Date.now()+Math.random(),src,cap:CONFIG.captions[(photos.length+out.length)%3]})}setPhotos([...photos,...out]);e.target.value=''};
+  return html`<div class="modal" onClick=${close}><div class="panel" onClick=${e=>e.stopPropagation()}>
+    <h2 class="script">Photos &amp; Music</h2>
+    <p class="hint">Photos are saved privately in this browser on this device only. Download them from your Drive folder, then add them here (select many at once).</p>
+    <label class="btn" style=${{display:'inline-block'}}>＋ Add photos<input type="file" accept="image/*" multiple hidden onChange=${add}/></label>
+    <button class="btn ghost" onClick=${()=>{if(confirm('Remove all photos?'))setPhotos([])}}>Clear (${photos.length})</button>
+    <p style=${{marginTop:14}}><b>Google Drive folder link</b></p>
+    <input type="text" value=${drive} onInput=${e=>setDrive(e.target.value)}/>
+    <button class="btn ghost" onClick=${()=>window.open(drive,'_blank','noopener')}>Open Drive folder ↗</button>
+    <p style=${{marginTop:14}}><b>Background song</b> <span class="hint">(never autoplays)</span></p>
+    <label class="btn ghost" style=${{display:'inline-block'}}>🎵 Choose song<input type="file" accept="audio/*" hidden onChange=${e=>{const f=e.target.files[0];if(f)setSong(f)}}/></label>
+    ${song&&html`<span class="hint">${song.name||'Song added'}</span>`}
+    <p><button class="btn" onClick=${close}>Done</button></p>
+  </div></div>`}
+
+function App(){
+  const [stage,setStage]=useState('welcome'),[photos,setPhotosS]=useState([]),[song,setSongS]=useState(null),[drive,setDriveS]=useState(CONFIG.driveLink);
+  const [manage,setManage]=useState(false),[play,setPlay]=useState(false),[ready,setReady]=useState(false);
+  const audio=useRef(null),url=useRef(null);
+  useEffect(()=>{(async()=>{const p=await kvGet('photos'),s=await kvGet('song'),d=await kvGet('drive');if(p)setPhotosS(p);if(s)setSongS(s);if(d)setDriveS(d);setReady(true)})()},[]);
+  const setPhotos=p=>{setPhotosS(p);kvSet('photos',p)};
+  const setSong=s=>{setSongS(s);kvSet('song',s)};
+  const setDrive=d=>{setDriveS(d);kvSet('drive',d)};
+  useEffect(()=>{if(!song)return;if(url.current)URL.revokeObjectURL(url.current);url.current=URL.createObjectURL(song);if(audio.current){audio.current.src=url.current;if(play)audio.current.play().catch(()=>{})}},[song]);
+  const music=()=>{if(!song){setManage(true);return}const a=audio.current;if(a.paused){a.play().then(()=>setPlay(true)).catch(()=>{})}else{a.pause();setPlay(false)}};
+  const go=s=>{setStage(s);window.scrollTo({top:0,behavior:'smooth'})};
+  const Screen={welcome:Welcome,reveal:Reveal,gallery:Gallery,letter:Letter,cards:Cards,final:Final}[stage];
+  return html`<div>
+    <${Petals} n=${stage==='final'?36:20}/>
+    <audio ref=${audio} loop onPlay=${()=>setPlay(true)} onPause=${()=>setPlay(false)}></audio>
+    <div class="tools">
+      <button onClick=${music} aria-label="music" title="Music">${play?'⏸':'🎵'}</button>
+      <button onClick=${()=>setManage(true)} aria-label="photos" title="Photos">📷</button>
+    </div>
+    <${Screen} key=${stage} go=${go} photos=${photos} setPhotos=${setPhotos} openManage=${()=>setManage(true)}/>
+    ${manage&&html`<${Manage} photos=${photos} setPhotos=${setPhotos} song=${song} setSong=${setSong} drive=${drive} setDrive=${setDrive} close=${()=>setManage(false)}/>`}
+  </div>`}
+ReactDOM.createRoot(document.getElementById('root')).render(html`<${App}/>`);
+</script>
+</body>
+</html>
